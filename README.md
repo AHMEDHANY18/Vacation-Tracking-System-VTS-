@@ -46,7 +46,7 @@ It applies Object-Oriented Analysis and Design (OOAD) principles through UML dia
 ---
 
 ## 🧱 Technologies & Tools
-- **Design Tools:** Draw.io, Lucidchart, Mermaid
+- **Design Tools:** https://excalidraw.com/
 - **Documentation:** Markdown (`.md`)
 - **Version Control:** Git & GitHub
 
