@@ -13,7 +13,7 @@ It minimizes manual HR workload and ensures accurate, transparent, and rules-bas
 ## 📘 UML Diagrams
 
 ### 1️⃣ Use Case Diagrams
-Each use case focuses on a specific scenario of the system.
+> Represent the **functional requirements** and main **interactions between actors** (Employee, Manager, HR) and the system.
 
 - ![Create Request](./usecases/usecase-create.png)
 - ![Edit Pending Request](./usecases/usecase-edit.png)
@@ -23,7 +23,7 @@ Each use case focuses on a specific scenario of the system.
 ---
 
 ### 2️⃣ Flowcharts
-Detailed visual flow of how each process executes.
+> Show the **step-by-step logical flow** for each process including decision points, validation, and system feedback.
 
 - ![Create Flowchart](./flows/flowchart-create.png)
 - ![Edit Flowchart](./flows/flowchart-edit.png)
@@ -33,7 +33,7 @@ Detailed visual flow of how each process executes.
 ---
 
 ### 3️⃣ Sequence Diagrams
-Illustrate the interaction between **Employee**, **System**, and **Manager** step-by-step.
+> Illustrate **how messages are exchanged** between components (Employee, System, Manager, HR) in chronological order.
 
 - ![Create Sequence](./sequences/seq-create.png)
 - ![Edit Sequence](./sequences/seq-edit.png)
@@ -43,23 +43,48 @@ Illustrate the interaction between **Employee**, **System**, and **Manager** ste
 ---
 
 ### 4️⃣ Class Diagram
-![Class Diagram](./diagrams/calss.png)
+> Defines the **system structure**, showing relationships between classes like `Employee`, `Manager`, and services like `EmailService`.
 
-Defines the structural relationships between classes like `Employee`, `Manager`, `VacationRequest`, `LeaveCategory`, and supporting services (e.g. EmailService, ValidationService).
+![Class Diagram](./diagrams/calss.png)
 
 ---
 
 ### 5️⃣ Entity Relationship Diagram (ERD)
-![ERD](./diagrams/ERD.png)
+> Represents the **database schema**, including tables, attributes, and relationships between entities.
 
-Describes database tables, relationships, and entity dependencies for VTS.
+![ERD](./diagrams/ERD.png)
 
 ---
 
 ### 6️⃣ State Machine Diagram
+> Shows the **different states** a vacation request goes through (Created → Pending → Approved → HR Pending → HR Approved → Completed/Rejected/Withdrawn/Canceled).
+
 ![State Machine](./docs/state-machine.png)
 
-Represents the full lifecycle of a vacation request (Created → Pending → Approved → HR Pending → HR Approved → Completed/Rejected/Withdrawn/Canceled).
+---
+
+## 🧭 HR Approval Scenario
+> Explains how HR interacts with the system once the manager approves a request.
+> This ensures compliance, checks employee balance, and prevents overlap between team members’ vacations.
+
+📄 [View HR Approval Process](./docs/hr_approval.md)
+
+---
+
+## 🧱 UI Layouts
+
+### 👤 Employee Interface
+> The employee dashboard allows users to create, view, edit, and withdraw requests.
+> It displays vacation balances, dates, and current statuses for transparency.
+
+📄 [Employee UI Design](./ui/employee-ui.md)
+
+---
+
+### 🧑‍💼 Manager Interface
+> The manager dashboard provides a summarized view of pending requests, with quick actions like Approve, Reject, Forward to HR, and Comment.
+
+📄 [Manager UI Design](./ui/manager-ui.md)
 
 ---
 
@@ -71,28 +96,7 @@ Represents the full lifecycle of a vacation request (Created → Pending → App
 | ⚙️ Pseudocode | [Create](./pseudocode/create.md) – [Edit](./pseudocode/edit.md) – [Withdraw](./pseudocode/withdraw.md) – [Cancel](./pseudocode/cancel.md) | Step-by-step pseudocode for each major flow |
 | 🧭 HR Scenario | [HR Approval](./docs/hr_approval.md) | Describes the HR-level approval process |
 | 🧠 State Machine | [state-machine.png](./docs/state-machine.png) | State transition visualization |
-| 🧩 UI Mockups | [Employee UI](./ui/employee-ui.md) & [Manager UI](./ui/manager-ui.md) | Layout and design sketches for both user interfaces |
-
----
-
-## 🧱 System Features
-
-### 👤 Employee
-- Submit vacation requests
-- Edit or withdraw pending requests
-- Cancel approved requests (if applicable)
-- View vacation history and remaining balance
-
-### 🧑‍💼 Manager
-- View pending requests
-- Approve or reject vacation requests
-- View request history per employee
-- Forward certain requests to HR
-
-### 🏢 HR Department
-- Review HR-level approvals
-- Manage employee leave balances
-- Access and audit vacation history
+| 🧩 UI Mockups | [Employee UI](./ui/employee-ui.md) & [Manager UI](./ui/manager-ui.md) | Interface sketches for both roles |
 
 ---
 
@@ -106,12 +110,12 @@ Represents the full lifecycle of a vacation request (Created → Pending → App
 
 ---
 
-## 🔍 System Highlights
-- Fully modular structure (flows, pseudocode, sequences, use cases)
-- Clear separation between **Employee**, **Manager**, and **HR** layers
-- Comprehensive documentation following **OOAD standards**
-- Designed for future scalability (e.g., adding `HR_Approval` or `Finance_Check`)
-- Consistent naming and visual structure for professional readability
+## 🧠 System Highlights
+- ✅ Fully modular and structured (flows, pseudocode, sequences, use cases)
+- 🧩 Clear separation between **Employee**, **Manager**, and **HR** layers
+- 🧠 Based on **Object-Oriented Analysis & Design (OOAD)** best practices
+- 📈 Scalable — supports adding new approval stages like `HR_Approval` or `Finance_Check`
+- 🧾 Consistent naming and unified design for professional readability
 
 ---
 
