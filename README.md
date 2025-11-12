@@ -13,59 +13,80 @@ It minimizes manual HR workload and ensures accurate, transparent, and rules-bas
 ## 📘 UML Diagrams
 
 ### 1️⃣ Use Case Diagrams
-> Represent the **functional requirements** and main **interactions between actors** (Employee, Manager, HR) and the system.
+Represent the **functional requirements** and the main **interactions between actors** (Employee, Manager, HR) and the system.
 
-- ![Create Request](./usecases/usecase-create.png)
-- ![Edit Pending Request](./usecases/usecase-edit.png)
-- ![Withdraw Pending Request](./usecases/usecase-withdraw.png)
-- ![Cancel Approved Request](./usecases/usecase-cancel.png)
+#### 🧠 Create Vacation Request
+![Create Request](./usecases/usecase-create.png)
+
+#### ✏️ Edit Pending Request
+![Edit Pending Request](./usecases/usecase-edit.png)
+
+#### 🔄 Withdraw Pending Request
+![Withdraw Pending Request](./usecases/usecase-withdraw.png)
+
+#### ❌ Cancel Approved Request
+![Cancel Approved Request](./usecases/usecase-cancel.png)
 
 ---
 
 ### 2️⃣ Flowcharts
-> Show the **step-by-step logical flow** for each process including decision points, validation, and system feedback.
+Show the **step-by-step logical flow** for each process including decision points, validation, and system feedback.
 
-- ![Create Flowchart](./flows/flowchart-create.png)
-- ![Edit Flowchart](./flows/flowchart-edit.png)
-- ![Withdraw Flowchart](./flows/flowchart-withdraw.png)
-- ![Cancel Flowchart](./flows/flowchart-cancel.png)
+#### 🧠 Create Flowchart
+![Create Flowchart](./flows/flowchart-create.png)
+
+#### ✏️ Edit Flowchart
+![Edit Flowchart](./flows/flowchart-edit.png)
+
+#### 🔄 Withdraw Flowchart
+![Withdraw Flowchart](./flows/flowchart-withdraw.png)
+
+#### ❌ Cancel Flowchart
+![Cancel Flowchart](./flows/flowchart-cancel.png)
 
 ---
 
 ### 3️⃣ Sequence Diagrams
-> Illustrate **how messages are exchanged** between components (Employee, System, Manager, HR) in chronological order.
+Illustrate **how messages are exchanged** between components (Employee, System, Manager, HR) in chronological order.
 
-- ![Create Sequence](./sequences/seq-create.png)
-- ![Edit Sequence](./sequences/seq-edit.png)
-- ![Withdraw Sequence](./sequences/seq-withdraw.png)
-- ![Cancel Sequence](./sequences/seq-cancel.png)
+#### 🧠 Create Sequence
+![Create Sequence](./sequences/seq-create.png)
+
+#### ✏️ Edit Sequence
+![Edit Sequence](./sequences/seq-edit.png)
+
+#### 🔄 Withdraw Sequence
+![Withdraw Sequence](./sequences/seq-withdraw.png)
+
+#### ❌ Cancel Sequence
+![Cancel Sequence](./sequences/seq-cancel.png)
 
 ---
 
 ### 4️⃣ Class Diagram
-> Defines the **system structure**, showing relationships between classes like `Employee`, `Manager`, and services like `EmailService`.
+Defines the **system structure**, showing relationships between classes like `Employee`, `Manager`, and services such as `EmailService` and `ValidationService`.
 
 ![Class Diagram](./diagrams/calss.png)
 
 ---
 
 ### 5️⃣ Entity Relationship Diagram (ERD)
-> Represents the **database schema**, including tables, attributes, and relationships between entities.
+Represents the **database schema**, including tables, attributes, and relationships between entities.
 
 ![ERD](./diagrams/ERD.png)
 
 ---
 
 ### 6️⃣ State Machine Diagram
-> Shows the **different states** a vacation request goes through (Created → Pending → Approved → HR Pending → HR Approved → Completed/Rejected/Withdrawn/Canceled).
+Shows the **different states** a vacation request goes through (Created → Pending → Approved → HR Pending → HR Approved → Completed / Rejected / Withdrawn / Canceled).
 
 ![State Machine](./docs/state-machine.png)
 
 ---
 
 ## 🧭 HR Approval Scenario
-> Explains how HR interacts with the system once the manager approves a request.
-> This ensures compliance, checks employee balance, and prevents overlap between team members’ vacations.
+Explains how HR interacts with the system once the manager approves a request.
+This ensures compliance, checks employee balance, and prevents overlap between team members’ vacations.
 
 📄 [View HR Approval Process](./docs/hr_approval.md)
 
@@ -74,15 +95,15 @@ It minimizes manual HR workload and ensures accurate, transparent, and rules-bas
 ## 🧱 UI Layouts
 
 ### 👤 Employee Interface
-> The employee dashboard allows users to create, view, edit, and withdraw requests.
-> It displays vacation balances, dates, and current statuses for transparency.
+The employee dashboard allows users to create, view, edit, and withdraw requests.
+It displays vacation balances, dates, and current statuses for transparency.
 
 📄 [Employee UI Design](./ui/employee-ui.md)
 
 ---
 
 ### 🧑‍💼 Manager Interface
-> The manager dashboard provides a summarized view of pending requests, with quick actions like Approve, Reject, Forward to HR, and Comment.
+The manager dashboard provides a summarized view of pending requests, with quick actions like **Approve**, **Reject**, **Forward to HR**, and **Comment**.
 
 📄 [Manager UI Design](./ui/manager-ui.md)
 
@@ -101,6 +122,7 @@ It minimizes manual HR workload and ensures accurate, transparent, and rules-bas
 ---
 
 ## ⚙️ Technologies & Tools
+
 | Type | Tool / Platform |
 |------|-----------------|
 | **Design & Diagrams** | [Excalidraw](https://excalidraw.com), Draw.io |
