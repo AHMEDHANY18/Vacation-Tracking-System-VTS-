@@ -144,7 +144,7 @@ The manager dashboard provides a summarized view of pending requests, with quick
 ## 👨‍💻 Author
 **Ahmed Hany**
 _Object-Oriented Analysis and Design Project_
-Faculty of Computers and Artificial Intelligence – Cairo University
+Faculty of Computer science and information technology – sinai University
 
 ---
 
